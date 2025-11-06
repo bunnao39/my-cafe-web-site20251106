@@ -1,0 +1,164 @@
+/* ------------------------------
+   喫茶 山の灯り　スタイルシート
+   ------------------------------ */
+
+body {
+  margin: 0;
+  font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+  line-height: 1.8;
+  color: #4b2e05;
+  background-color: #fffaf2;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #4b2e05;
+}
+
+/* ヘッダー */
+header {
+  background-color: #a67c52;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+/* メインビジュアル */
+.main-visual {
+  position: relative;
+  text-align: center;
+}
+
+.main-visual img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.overlay h2 {
+  font-size: 2.5rem;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+}
+
+/* セクション共通 */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about, .master {
+  background-color: #fdf6ee;
+}
+
+/* メニュー */
+.menu-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.menu-item {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.menu-item h3 {
+  margin: 10px 0 5px;
+}
+
+.menu-item span {
+  display: block;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* マスター紹介 */
+.master-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.master-content img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.master-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* 店舗情報 */
+.info {
+  background-color: #b58b5b;
+  color: #fff;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.access {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  background-color: #4b2e05;
+  color: #fff;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
